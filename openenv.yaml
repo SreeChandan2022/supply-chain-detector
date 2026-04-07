@@ -1,0 +1,29 @@
+spec_version: "1"
+name: supply-chain-detector
+type: environment
+description: >
+  AI Supply Chain Attack Detector — agents detect typosquatted packages,
+  malicious model cards, and poisoned training datasets.
+runtime:
+  language: python
+  version: "3.11"
+app: server.app:app
+port: 7860
+tags:
+  - openenv
+  - security
+  - ai-safety
+  - supply-chain
+tasks:
+  - id: typosquat
+    name: Typosquatting Detection
+    difficulty: easy
+    description: Detect maliciously named Python packages in requirements.txt
+  - id: modelcard
+    name: Model Card Red Flag Analysis
+    difficulty: medium
+    description: Identify suspicious or malicious Hugging Face model cards
+  - id: poisoning
+    name: Dataset Poisoning Detection
+    difficulty: hard
+    description: Find backdoor triggers and label poisoning in training datasets
