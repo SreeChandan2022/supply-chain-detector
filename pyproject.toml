@@ -1,0 +1,18 @@
+[project]
+name = "supply-chain-detector"
+version = "1.0.1"
+description = "AI Supply Chain Attack Detector - OpenEnv Environment"
+authors = [
+    {name = "Chandan", email = "sreechandan2022@gmail.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.0.0",
+    "openenv-core>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
